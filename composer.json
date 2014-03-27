@@ -2,7 +2,7 @@
     "name": "pimcore/installer-core",
     "type": "composer-installer",
     "license": "BSD-3-Clause",
-	"description": "A custom installer for pimcore",
+	"description": "A custom composer installer for pimcore",
 	"keywords": ["pimcore","installer"],
 	"homepage": "http://www.pimcore.org/",
 	"authors": [
