@@ -27,7 +27,13 @@ class Installer implements InstallerInterface
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return './www/';
+	
+		$docRootName = "./www"; 
+		if($configDocRoot = $this->composer->getConfig()->get("document-root-path")) {
+			$docRootName = rtrim($configDocRoot,"/");
+		}
+	
+        return $docRootName . '/';
     }
 
 	/**
